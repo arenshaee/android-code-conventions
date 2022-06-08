@@ -123,11 +123,11 @@ As a general rule, we use the class name as tag and we define it as a `val` fiel
 ```kotlin
 class MyClass {
     fun myMethod() {
-        Log.e(TAG, "My error message")
+		Log.e(TAG, "My error message")
     }
     
     companion object {
-	    val TAG: String = MyClass::class.java.simpleName
+		val TAG: String = MyClass::class.java.simpleName
     }
 }
 ```
