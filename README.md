@@ -286,7 +286,28 @@ String names start with a prefix that identifies the section they belong to. For
 | `title_`             | A title, i.e. a dialog title          |
 | `action_`            | An action such as "Save" or "Create"  |
 
-#### 2.3.2.3 Styles and Themes
+#### Styles and Themes
 
 Unlike the rest of resources, style names are written in __UpperCamelCase__.
+
+#### Room Conventions
+
+Right all of your sql queries and commands with small case except for table names, column names, paramenters; for those you can use whatever they have been written with.
+
+```sql
+select * from User where id > :id
+```
+
+for naming DAO's just use the name of the entity, with `Dao` postfix: `UserDao`
+for naming DAO's functions, use small camel case, with only the function name. avoid using the entity's name in function names:
+```kotlin
+// bad
+fun getUserById(id: long): User
+fun getAllUserList(): List<User>
+
+// good
+fun getById(id: long): User
+fun getAll(): List<User>
+```
+
 
