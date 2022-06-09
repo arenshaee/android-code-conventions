@@ -236,11 +236,11 @@ This is __bad__ :
 </TextView>
 ```
 
-### 2.3.2 Resources naming
+### Resources naming
 
 Resource IDs and names are written in __lowercase_underscore__.
 
-#### 2.3.2.1 ID naming
+#### ID naming
 
 IDs should be prefixed with the name of the element in lowercase underscore. For example:
 
@@ -290,7 +290,8 @@ String names start with a prefix that identifies the section they belong to. For
 
 Unlike the rest of resources, style names are written in __UpperCamelCase__.
 
-#### Room Conventions
+
+### Database and Room
 
 Right all of your sql queries and commands with small case except for table names, column names, paramenters; for those you can use whatever they have been written with.
 
