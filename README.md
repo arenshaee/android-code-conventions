@@ -5,7 +5,7 @@
  * Use **Tabs** for indentions and spaces only for formation.
  * No more than **40 changed files** in pull requests. If your PR exceeds this number, split into smaller PRs.
 
-For All android related best practices, stick with [this documentation](https://github.com/futurice/android-best-practices).
+For All **"android related"** best practices, stick with [this documentation](https://github.com/futurice/android-best-practices).
 
 (*Section below is copied from [here](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md) with some changes.*)
 # Project guidelines
