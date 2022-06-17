@@ -247,19 +247,19 @@ IDs should be prefixed with the name of the element in lowercase underscore. For
 
 | Element            | Prefix            |
 | -----------------  | ----------------- |
-| `TextView`           | `label_`        |
-| `ImageView`          | `image_`        |
-| `Button`             | `action_`       |
-| `EditText`           | `input_`        |
-| `CheckBox`           | `check_`        |
-| `ViewGroup`          | `container_`    |
+| `TextView`           | `<place>_<intent>_label`    |
+| `ImageView`          | `<place>_<intent>_image`    |
+| `Button`             | `<place>_<intent>_action`   |
+| `EditText`           | `<place>_<intent>_input`    |
+| `CheckBox`           | `<place>_<intent>_check`    |
+| `ViewGroup`          | `<place>_<intent>_container`|
 
 
 Image view example:
 
 ```xml
 <ImageView
-    android:id="@+id/image_profile"
+    android:id="@+id/fragment_foo_user_image_profile"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
 ```
@@ -269,7 +269,7 @@ Menu example:
 ```xml
 <menu>
 	<item
-        android:id="@+id/menu_done"
+        android:id="@+id/foo_done_menu"
         android:title="Done" />
 </menu>
 ```
