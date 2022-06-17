@@ -247,13 +247,15 @@ IDs should be prefixed with the name of the element in lowercase underscore. For
 
 | Element            | Prefix            |
 | -----------------  | ----------------- |
-| `TextView`           | `<place>_<intent>_label`    |
-| `ImageView`          | `<place>_<intent>_image`    |
-| `Button`             | `<place>_<intent>_action`   |
-| `EditText`           | `<place>_<intent>_input`    |
-| `CheckBox`           | `<place>_<intent>_check`    |
-| `ViewGroup`          | `<place>_<intent>_container`|
+| `TextView`           | `<place>_<intent?>_label`    |
+| `ImageView`          | `<place>_<intent?>_image`    |
+| `Button`             | `<place>_<intent?>_action`   |
+| `EditText`           | `<place>_<intent?>_input`    |
+| `CheckBox`           | `<place>_<intent?>_check`    |
+| `ViewGroup`          | `<place>_<intent?>_container`|
 
+
+**?** means it's optional. depends on the situation.
 
 Image view example:
 
