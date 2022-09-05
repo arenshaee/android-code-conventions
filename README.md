@@ -7,6 +7,8 @@
 
 For All **"android related"** best practices, stick with [this documentation](https://github.com/futurice/android-best-practices).
 
+For kotlin best practices, read the [Effective Kotlin](https://www.amazon.com/Effective-Kotlin-practices-Marcin-Moskala/dp/8395452837) book.
+
 (*Section below is copied from [here](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md) with some changes.*)
 # Project guidelines
 
