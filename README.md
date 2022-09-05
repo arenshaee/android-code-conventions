@@ -263,7 +263,7 @@ Image view example:
 
 ```xml
 <ImageView
-    android:id="@+id/fragment_foo_user_image_profile"
+    android:id="@+id/fragment_foo_user_profile_image"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
 ```
