@@ -187,10 +187,8 @@ In the case of Activities the method is usually called `getStartIntent()`:
 
 ```kotlin
 companion object {
-	fun getStartIntent(context: Context, user: User): Intent {
-		val intent = Intent(context, ThisActivity::class)
-		intent.putParcelableExtra(EXTRA_USER, user)
-		return intent
+	fun getStartIntent(context: Context, user: User) = Intent(context, ThisActivity::class).apply{
+		putParcelableExtra(EXTRA_USER, user)
 	}
 }
 ```
@@ -199,12 +197,10 @@ For Fragments it is named `newInstance()` and handles the creation of the Fragme
 
 ```kotlin
 companion object {
-	fun newInstance(user: User): UserFragment {
-		val fragment = UserFragment()
-		val args = Bundle()
-		args.putParcelable(ARGUMENT_USER, user)
-		fragment.arguments = args
-		return fragment
+	fun newInstance(user: User) = UserFragment().apply {
+		arguments = Bundle().apply{
+			putParcelable(ARGUMENT_USER, user)
+		}
 	}
 }
 ```
